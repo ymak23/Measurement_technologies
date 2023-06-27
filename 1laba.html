@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+    <link href="style.css" rel="stylesheet">
+<script>
+
+</script>
+</head>
+<body>
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="1.js"></script>
+
+<section class="chart">
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='главная.html'" value="Главная">
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='lab1.html'" value="Описание работы">
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='krteoriy1.html'" value="Краткая теория">
+<section class="chart">
+
+<section class="chart">
+      <h1 class="chart__title">Эффективный коэффициент электромеханической связи определяется по частотной характеристике модуля проводимости  ПКЭ в области резонанса</h1>
+      
+      <form class="chart__data" action="#" method="POST">
+
+        <form class="chart__data" action="#" method="POST">
+
+        <div class="chart__input-group">
+          <label class="chart__label" for="javascript">\(F_{1}\)</label>
+          <input class="chart__input input-field" type="number" name="F1" value="48000" id="F1" required>
+          <span>, Гц</span>
+        </div>
+
+        <div class="chart__input-group">
+          <label class="chart__label" for="javascript">\(F_{2}\)</label>
+          <input class="chart__input input-field" type="number" name="F2" value="56000" id="F2" required>
+          <span>, Гц</span>
+        </div>
+
+        <div class="chart__input-group">
+          <label class="chart__label" for="javascript">\(R\)</label>
+          <input class="chart__input input-field" type="number" name="R" value="10" id="R" required>
+          <span>, Ом</span>
+        </div>
+  
+
+
+        <div class="chart__input-group">
+          <label class="chart__label" for="php">\(L\)</label>
+          <input class="chart__input input-field" type="number" name="L" value="10" id="L"  required>
+          <span>, мГн</span>
+        </div>
+  
+
+
+        <div class="chart__input-group">
+          <label class="chart__label" for="python">\(C\)</label>
+          <input class="chart__input input-field" type="number" name="C" value="1" id="C"  required>
+          <span>, нФ</span>
+        </div>
+
+
+        <div class="chart__input-group">
+          <label class="chart__label" for="css">\(C_{0}\)</label>
+          <input class="chart__input input-field" type="number" value="10" name="C0" id="C0"  required>
+          <span>, нФ</span>
+        </div>
+  
+
+
+        <input class="chart__submit-button input-field" type="button" name="button" id="button" 
+        onclick="kalk()" value="Показать график">
+      
+        <div class="chart__input-group"><p>
+          <label class="chart__label" for="css">Частота резонанса</label>
+          <output name="ur" id="ur"></output></p>
+        </div>
+
+        <div class="chart__input-group"><p>
+          <label class="chart__label" for="css">Частота антирезонанса</label>
+          <output name="ua" id="ua"></output></p>
+        </div>
+
+        <div class="chart__input-group"><p>
+          <label class="chart__label" for="css">Коэффициент электромеханической связи</label>
+          <output name="k" id="k"> </output></p>
+        </div>
+       
+      </form>
+      
+  
+      <div class="chart__canvas-wrapper">
+      <div id="chartContainer" style="height: 250px; width: 99%; "></div>
+      <canvas id="canvas" width="500" height="250">Браузер не поддерживает Canvas</canvas>
+        
+      </div>
+      </div>
+
+    
+    </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+    <link href="style1.css" rel="stylesheet">
+<script>
+</script>
+</head>
+<body>
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<section class="chart">
+  <input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='главная.html'" value="Главная">
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='3laba.html'" value="Программа">
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='vopros2.html'" value="Контрольные вопросы">
+<section class="chart">
+  
+<h1 class="chart__title">ИССЛЕДОВАНИЕ ВЛИЯНИЯ ДОБРОТНОСТИ ПКЭ НА ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ САМОЙ ДОБРОТНОСТИ</h1>
+
+
+<p>При измерении добротности ПКЭ можно использовать различные подходы, в зависимости от характера исходных данных. 
+
+  <p>Если известны параметры элементов электрической эквивалентной схемы, то добротность определяется формулами \(Q_{м}= (\omega _{p}RC)^{-1}\) или \(Q_{м}=\omega _{p}L/R\)<i>(здесь и в дальнейшем используются обозначения принятые в лабораторной работе 1).</i> </p>
+
+<p>Если измерены частоты максимума и минимума модуля проводимости и сами частоты в этих точках , то добротность определяется формулой</p>
+<p>\(Q_{м} = \frac{\omega _{p}^{2}}{\omega _{a}^{2}-\omega _{p}^{2}}\left(\frac{\left|Y_{m} \right|}{\left|Y_{n} \right|} \right)^{1/2}\)</p>
+
+ <p>При измерении частотной зависимости активной составляющей проводимости \(G(\omega )\): частота максимума соответствует частоте  механического резонанса ПКЭ \(\omega _{p}\), обратная величина проводимости на частоте механического резонанса соответствует активному сопротивлению \(R=1/G(\omega _{p})\). Значение механической добротности определяется по ширине резонансной кривой А на уровне 0,5 от максимального значения. Последнее утверждение следует из равенства:</p>
+
+ <p>\(\frac{1}{(1+\nu ^{2}(\omega )Q_{м}^{2})}=\frac{1}{2}\) </p>
+
+ <p>При условии, \(\omega _{2}-\omega _{p}<<\omega _{p}\)(рис. 2.1), когда справедливо приближение</p>
+ <p>\(\frac{\omega _{2}}{\omega _{p}}-\frac{\omega _{p}}{\omega _{2}}\approx \frac{2(\omega _{2}- \omega _{p})}{\omega _{p}}\)?
+
+  <br>и учитывая, что \(\Delta \omega \approx 2(\omega _{2}-\omega _{p})\), в итоге получим \(Q_{м}=\omega _{p}/\Delta \omega\).</p>
+
+  <figure> 
+  <img class=scaled src="добротность.png"
+    alt="диалоговое окно">
+  <figcaption>Рисунок 2.1 - Определение добротности по частотной характеристике активной составляющей проводимости имеется.</figcaption>
+</figure>
+
+
+  <p>При измерении частотной зависимости модуля полной проводимости возможность приближенного определения добротности. Действительно , можно показать, что для квадрата модуля проводимости справедливо соотношение</p>
+  <p>\(\left|Y(\omega ) \right|^{2}= \frac{1}{R}G(\omega )\left[1+\frac{\omega ^{2}}{\omega _{p}^{2}}\frac{1+\nu ^{2}Q_{м}^{2}}{M^{2}}- 2\frac{\omega }{\omega _{p}}\frac{\nu Q_{м}}{M} \right]\)</p>
+<p>где \(M=\frac{Q_{м}}{r_{c}}\), \(\frac{1}{r_{c}}= \frac{C}{C_{0}}\).</p>
+
+<p>Видно, что в области механического резонанса частотные зависимости \(G(\omega )\) и \(\left|Y(\omega )^{2} \right|\) примерно совпадают. То есть для определения добротности можно использовать результаты измерений ширины резонансной кривой модуля проводимости \(\Delta \omega _{\gamma }\), на уровне 0,7 от максимального значения \(Q_{м}=\omega _{p}/\Delta \omega _{\gamma }\) </p>
+
+<p>Исследование возможности определения добротности по частотной характеристике квадрата модуля проводимости и является целью лабораторной работы 3.</p>
+
+
+
+
+    </section>
+</body>
+</html>

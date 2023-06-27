@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 500;
+  color: #b3d5fc;
+  background-color: #1f2021;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #b3d5fc;
+}
+
+a:visited {
+  color: #b3d5fc;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #1f2021;
+}
+
+a:hover {
+  color:#1f2021;
+  border-bottom: 1px solid;
+  background: #b3d5fc;
+}
+
+a:active {
+  background: #b3d5fc;
+  color: #1f2021;
+}
+
+TABLE {
+  margin: auto;
+    background: b3d5fc; /* Цвет фона таблицы */
+    color: #1f2021; /* Цвет текста */
+    border: 5px double #b3d5fc;
+    
+   }
+TD, TH {
+  background: #b3d5fc; /* Цвет фона ячеек */
+  padding: 5px; /* Поля вокруг текста */
+  }
+caption{
+  color: #b3d5fc;
+  background-color: #1f2021;
+  font-style: italic;
+  text-align: right;
+}
+
+figure {
+  float: center;
+  width: 90%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+img.scaled {
+  width: 100%;
+}
+
+.chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+p{
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+li{
+  padding: 10px;
+}
+
+.chart__title {
+  width: 100%;
+  margin-bottom: 70px;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.chart__data {
+  width: 250px;
+}
+
+.chart__input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart__input-group:last-of-type {
+  margin-bottom: 120px;
+}
+
+.chart__label {
+  max-width: 140px;
+  margin-right: auto;
+}
+
+.input-field {
+  font-size: inherit;
+  color: inherit;
+  text-align: center;
+  white-space: normal;
+  border: 1px solid #b3d5fc;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.chart__input {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.chart__submit-button {
+  width: 100%;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.chart__submit-buttonbutton {
+  width: 30%;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.chart__submit-button:hover {
+  color: #1f2021;
+
+  background-color: #b3d5fc;
+}
+
+.chart__submit-buttonbutton:hover {
+  color: #1f2021;
+
+  background-color: #b3d5fc;
+}
+
+.chart__canvas-wrapper {
+  height: 250px;
+  border: 1px solid #b3d5fc;
+  border-radius: 5px;
+  
+}

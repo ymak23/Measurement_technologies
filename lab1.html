@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+    <link href="style.css" rel="stylesheet">
+<script>
+
+</script>
+</head>
+<body>
+ 
+<script src="15.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<section class="chart">
+   <!-- <script src="20.js"></script> -->
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='главная.html'" value="Главная">
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='1laba.html'" value="Программа">
+<input class="chart__submit-buttonbutton input-field" type="button" name="button" id="button" 
+        onclick="document.location='krteoriy1.html'" value="Краткая теория">
+<section class="chart">
+<h1 class="chart__title">Лабораторная работа № 1 
+<p>Эффективный коэффициент электромеханической связи определяется по частотной характеристике модуля проводимости ПКЭ в области резонанса.  </p>
+<p>Цель работы: Оценка влияние величины добротности на точность определения эффективного коэффициента электромеханической связи по значениям модуля полной проводимости в экстремальных точках.</p>
+</h1>
+
+<p>Описание программы «Лабораторная работа 1»</p>
+<!-- <p class="chart__title">Описание программы «Лабораторная работа 1» </p> -->
+<br>Запустить программу «Лабораторная работа 1» любым известным способом. После запуска программы появляется диалоговое окно работы с программой, показанное на Рисунке 1.
+
+<figure> 
+  <img class=scaled src="Диалоговое окно программы «Лабораторная работа 1»..png"
+    alt="диалоговое окно">
+  <figcaption>Рисунок 1 - Диалоговое окно программы «Лабораторная работа 1».</figcaption>
+</figure>
+
+<br>В окне программы выделены три области: 
+<br>1 – область задания параметров элементов эквивалентной электрической схемы (для ввода данных необходимо установить курсор в ячейку и набрать нужное число),
+<br>2 – область отображения результатов расчета,
+<br>3 – область отображения графика частотной зависимости модуля проводимости.
+<br>Результат работы программы показан на Рисунке 2.
+<figure> 
+  <img class=scaled src="результаты выполнения лр1.png"
+    alt="диалоговое окно">
+  <figcaption>Рисунок 2 - Вид окна программы «Лабораторная работа 1» после выполнения расчетов.</figcaption>
+</figure>
+
+
+<p>Порядок выполнения работы </p>
+<br>1. Ввести параметры элементов эквивалентной электрической схемы.
+<br>2. Выполнить расчет значения коэффициента электромеханической связи (в ячейке появляется значение  ).
+<br>3. Повторить пп. 1 и 2 для всех значений, приведенных в табл. П.1
+<p><table width="100%">
+   <caption>Таблица 1 – Частотные характеристики</caption>
+   <tr><td>\(C_{0}\), нФ</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td> </tr>
+   <tr><td>\(C\), нФ</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+   <tr><td>\(L\), мГн</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr>
+   <tr><td>\(R\), Ом</td><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td><td>70</td><td>80</td><td>90</td><td>100</td></tr>
+   <tr><td>\(Q\)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td> </tr>
+   <tr><td>\(k^{2}_{e}\)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td> </tr>
+   <tr><td>\(\Delta = \frac{k^2_{e}-k^2_{e0}}{k^2_{e}}\)</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td> </tr>
+</table></p>
+\(k^{2}_{e}\texttt{- значение коэффициента электромеханической связи, измеренное при сопротивлении R = 10 Ом.}\) 
+<!-- - значение коэффициента электромеханической связи, измеренное при сопротивлении <br>R = 10 Ом. -->
+<!-- <br>4. После заполнения табл. 1 в программе электронных таблиц Excel построить график зависимости  -->
+\(\texttt{4. После заполнения табл. 1 в программе электронных таблиц Excel построить график зависимости }\Delta = f(Q)\texttt{.}\)
+5. Составить отчет о проделанной работе. 
+
+
+    </section>
+</body>
+</html>
