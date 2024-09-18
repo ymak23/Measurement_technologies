@@ -24,9 +24,7 @@ console.log(C);
 console.log(C0);
 
 
-// var ur=((1/L/C) *(1/L/C));
-// var ua= (((1/L)*((1/C) + (1/C0))) * ((1/L)*((1/C) + (1/C0))));
-// var k= ((ua-ur)/ua);
+
 tochka=[]
 fasa=[]
 var u=[]
@@ -35,9 +33,7 @@ var dps2 = []
 
 
 
-// document.getElementById("ua").innerHTML=ua
-// document.getElementById("ur").innerHTML=ur
-// document.getElementById("k").innerHTML=k
+
 N=(F2-F1)/150000
 i=F1
 max = 0;
@@ -51,37 +47,23 @@ while (i<=F2){
     B = w*C0-(w*L-1/w/C)/(R*R+(w*L-1/w/C)*(w*L-1/w/C));
     Y = G*G+B*B;
     yy= Math.sqrt(Y);
-    // if (yy>max) {max=yy; 
-    //     fmax=i }
-    // if (yy<min) {min=yy; 
-    //     fmin= i }
-    
-    
-    
-    //yyy = Math.abs(yy);
+
     e = Math.atan(B/G);
     if ((-0.000001<=e) && (e<0.001)) {
         fasa.push(e);
         tochka.push(i)
     }
-    //tochka.push(yyy);
-    //fasa.push(e);
-    //tochka.push(yy);
+
     m=i;
     u.push(m);
         dps1.push({
         x: m,
         y: e});
-        // dps2.push({
-        // x:m,
-        // y:e});
-    
-    
-    //console.log(dps1);
-    // console.log(tochka);
+
+
     
     i=i+N
-    //console.log(tochka[i])
+
 }
 fmin = tochka.slice(-1);
 fmax =  tochka[0];
