@@ -75,25 +75,6 @@ while (i<=F2){
     
     i=i+N
 }
-// for (j, j<5000, j++) {
-//     if (tochka[j]<=max){
-//         Y1[j]= tochka[j]}
-//     else {Y2[j] = tochka[j]
-//     }
-//     for (j, j++) {
-//     d07 = Math.abs(Y1[j]-y07);
-    
-//     if (d07 < min07){
-//         f1 = chastota[j];
-//         min07= d07;
-//     }
-//     df = (f1 - fmax)*2;
-//     Q = fmax/df;
-// }
-    
-
-//}
-
 
 document.getElementById("ua").innerHTML=df
 document.getElementById("ur").innerHTML=fmax
@@ -114,18 +95,4 @@ var chart = new CanvasJS.Chart("chartContainer", {
     }]
 });
 chart.render();
-
-
-
-// var chart = new CanvasJS.Chart("chartContainer", {
-//     animationEnabled: true,
-//     data: [{
-//         type: "spline",
-//         markerSize: 0,
-//         dataPoints: dps2 
-//     }]
-// });
-// chart.render();
-
-
 }
