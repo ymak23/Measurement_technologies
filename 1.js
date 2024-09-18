@@ -24,9 +24,7 @@ console.log(C);
 console.log(C0);
 
 
-// var ur=((1/L/C) *(1/L/C));
-// var ua= (((1/L)*((1/C) + (1/C0))) * ((1/L)*((1/C) + (1/C0))));
-// var k= ((ua-ur)/ua);
+
 tochka=[]
 fasa=[]
 var u=[]
